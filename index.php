@@ -41,7 +41,7 @@
 				 $link = 'http://youtube.com'.$element->href;
 			$result = str_replace('http://youtube.com/watch?v=', '', $link, $count);
 			$c = 'https://www.googleapis.com/youtube/v3/videos?id='.$result.'&key=AIzaSyBZtN5WBJ9kRMpAcC5Yv6VxfQrn1OGBPhU&part=snippet,statistics&fields=items(id,snippet,statistics)';
-			
+			// get keyapi in google console change key=AIzaSyBZtN5WBJ9kRMpAcC5Yv6VxfQrn1OGBPhU
 			$json = file_get_contents($c);
 			$json = json_decode($json, true);
 			$id_video = $json['items']['0']['id'];
