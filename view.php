@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
+<title>Xem video</title>
 </head>
 
 <body>
@@ -11,7 +11,7 @@
 	{
 		$id = $_GET['id'];
 		$c = 'https://www.googleapis.com/youtube/v3/videos?id='.$id.'&key=AIzaSyBZtN5WBJ9kRMpAcC5Yv6VxfQrn1OGBPhU&part=snippet,statistics&fields=items(id,snippet,statistics)';
-		// get keyapi youtube change key=AIzaSyBZtN5WBJ9kRMpAcC5Yv6VxfQrn1OGBPh 
+		// change keyapi youtube at /key=AIzaSyBZtN5WBJ9kRMpAcC5Yv6VxfQrn1OGBPhU/
 		$json = file_get_contents($c); //lấy nội dung page json đổ vào biến
 		$json = json_decode($json, true);
 		$title = $json['items']['0']['snippet']['title'];

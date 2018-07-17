@@ -75,6 +75,6 @@
 ?>
 
 <br />
-Được viết bởi <a href="http://www.writecodetolife.tk/">Peter Dinh</a>
+Được viết bởi <a href="https://peterdinh.tk/">Peter Dinh</a>
 </body>
 </html>
